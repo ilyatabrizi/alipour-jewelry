@@ -320,20 +320,22 @@ ul,ol{margin:0;padding:0;list-style:none}
   transform:translateY(-50%);height:min(300px,34svh);width:1px;background:var(--line-soft);
 }
 .spine__fill{position:absolute;inset-block-start:0;inset-inline:0;background:var(--gold-grad);height:0%}
+/* label sits inboard of the rule so it can't run off the viewport edge */
 .spine__lab{
-  position:absolute;inset-inline-end:10px;inset-block-start:-4px;font-size:.62rem;letter-spacing:.24em;
+  position:absolute;inset-inline-start:12px;inset-block-start:-4px;font-size:.62rem;letter-spacing:.24em;
   color:var(--muted);writing-mode:vertical-rl;text-orientation:mixed;white-space:nowrap;
 }
 /* phones: stack — jewel on top, copy beneath it */
 @media (max-width:900px){
   .spine{display:none}
+  /* copy pinned to the top, the jewel takes every pixel that's left */
   .serpent__stage{
-    grid-template-columns:1fr;grid-template-rows:1fr auto;
-    align-items:center;gap:0;padding-block:calc(var(--nav-h) + 8px) 4svh;
+    grid-template-columns:1fr;grid-template-rows:auto 1fr;
+    align-items:start;gap:0;padding-block:calc(var(--nav-h) + 6px) 5svh;
   }
-  .serpent__view{height:auto}
-  .serpent__canvas,.serpent__poster,.serpent__hots{width:min(100%,560px);max-height:52svh}
-  .serpent__copy{height:min(34svh,250px);text-align:center}
+  .serpent__view{height:100%;align-self:center}
+  .serpent__canvas,.serpent__poster,.serpent__hots{width:min(100%,560px);max-height:58svh}
+  .serpent__copy{height:min(29svh,215px);text-align:center}
   .beat__t{font-size:clamp(1.4rem,6.4vw,2rem)}
   .beat__d{font-size:.9rem}
   .hot__lab{font-size:.7rem}
