@@ -3,68 +3,77 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0e2d1a">
+<meta name="theme-color" content="#efe9dd">
 <title>جواهرات | جواهری علیپور</title>
 <meta name="description" content="گالری جواهرات و طلای علیپور — انگشتر، گردنبند، گوشواره، دستبند، آویز و سرویس.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IRANYekanXFaNum-VF.woff2" crossorigin>
 <link rel="stylesheet" href="css/app.css">
+<style>
+  /* the catalogue lives entirely on paper */
+  html,body{background:var(--paper);color:var(--paper-ink)}
+  .nav .mark{color:var(--paper-ink)}
+  .nav .mark span{color:#8a7660;border-inline-start-color:rgba(27,28,24,.18)}
+  .navbtn{color:rgba(27,28,24,.6)}
+  .navbtn:hover{color:var(--paper-ink)}
+  .nav.stuck{background:linear-gradient(var(--paper),rgba(239,233,221,0))}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem 1.7rem;margin-bottom:clamp(30px,4vw,56px)}
+  .chip{font-size:13px;font-variation-settings:'wght' 400;color:rgba(27,28,24,.45);
+    padding-block:.3em;border-bottom:1px solid transparent;transition:color .4s,border-color .4s}
+  .chip:hover{color:var(--paper-ink)}
+  .chip.on{color:var(--paper-ink);border-bottom-color:#8a7660}
+  .foot{background:var(--paper);border-top:1px solid rgba(27,28,24,.16)}
+  .foot a,.foot .micro{color:rgba(27,28,24,.6)}
+  .foot a:hover{color:var(--paper-ink)}
+</style>
 </head>
 <body>
 
 <a class="skip" href="#main">پرش به محتوای اصلی</a>
 
-<header class="nav stuck">
+<header class="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="index.html">ALIPOUR<small>JEWELRY</small></a>
-    <nav class="menu" aria-label="فهرست اصلی">
-      <a href="index.html#collection">کالکشن مار</a>
-      <a href="products.html" aria-current="page">جواهرات</a>
-      <a href="index.html#house">خانه علیپور</a>
-      <a href="index.html#contact">تماس</a>
-    </nav>
-    <a class="lnk" href="index.html#contact">رزرو وقت <i>←</i></a>
-    <button class="burger" aria-label="فهرست" aria-expanded="false">
-      <svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16"/></svg>
-    </button>
+    <a class="mark" href="index.html">ALIPOUR<span>JEWELRY</span></a>
+    <button class="navbtn" data-menu aria-expanded="false">فهرست</button>
   </div>
 </header>
 
-<div class="drawer" role="dialog" aria-label="فهرست">
-  <button class="drawer__x" aria-label="بستن">×</button>
-  <a href="index.html#collection">کالکشن مار</a>
+<div class="menu" role="dialog" aria-label="فهرست" aria-hidden="true">
+  <button class="menu__x" data-menu-close>بستن</button>
+  <a href="index.html#serpent">کالکشن مار</a>
   <a href="products.html">جواهرات</a>
-  <a href="index.html#house">خانه علیپور</a>
-  <a href="index.html#contact">تماس</a>
+  <a href="index.html#atelier">کارگاه</a>
+  <a href="index.html#visit">گالری</a>
 </div>
 
 <main id="main">
-  <section style="padding-block:calc(var(--nav) + clamp(56px,8vw,120px)) clamp(24px,3vw,40px)">
+  <section style="padding-block:calc(var(--nav) + clamp(60px,9vw,130px)) clamp(20px,3vw,36px)">
     <div class="wrap">
-      <span class="kicker" data-rv>گالری</span>
-      <h1 class="d1" data-rv style="margin-bottom:1rem">جواهرات</h1>
-      <p class="lead" data-rv style="margin-bottom:clamp(30px,4vw,54px)">
+      <span class="kick" data-rv style="color:#8a7660">گالری</span>
+      <h1 class="d1" data-rv style="margin-bottom:20px">جواهرات</h1>
+      <p class="body" data-rv style="color:rgba(27,28,24,.6);margin-bottom:clamp(34px,4.4vw,60px)">
         <span data-count-out>۱۵۶</span> قطعه. برای خرید و جزئیات، به فروشگاه رسمی هدایت می‌شوید.
       </p>
       <div class="chips" role="group" aria-label="فیلتر دسته‌بندی"></div>
     </div>
   </section>
 
-  <section style="padding-bottom:clamp(80px,11vw,160px)">
+  <section style="padding-bottom:clamp(90px,12vw,170px)">
     <div class="wrap">
-      <div class="grid g4" data-products></div>
+      <div class="plates" data-products></div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <p class="small">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
+    <a class="mark" href="index.html" style="font-size:15px">ALIPOUR<span>JEWELRY</span></a>
     <nav aria-label="پیوندها">
       <a href="index.html">خانه</a>
-      <a href="index.html#contact">تماس</a>
+      <a href="index.html#visit">گالری</a>
       <a href="https://instagram.com/alipour.jewelry" target="_blank" rel="noopener">اینستاگرام</a>
     </nav>
+    <p class="micro">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
   </div>
 </footer>
 

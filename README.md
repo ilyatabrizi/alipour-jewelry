@@ -1,7 +1,8 @@
 # جواهری علیپور — Alipour Jewelry
 
 Redesign of [alipourjewelry.com](https://alipourjewelry.com) — a Persian RTL luxury
-jewellery site. Deep green, minimal, opening on a scroll-driven 3D view of the piece.
+jewellery site. «لوحه» — a deep-green board with one printed plate on it, and the serpent
+living inside that plate.
 
 **Live:** https://ilyatabrizi.github.io/alipour-jewelry/
 

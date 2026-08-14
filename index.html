@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0e2d1a">
+<meta name="theme-color" content="#071b10">
 <title>جواهری علیپور</title>
 <meta name="description" content="جواهری علیپور — طراحی و ساخت طلا و جواهر اصیل در تبریز، از سال ۱۳۴۰.">
 <meta property="og:title" content="جواهری علیپور">
@@ -12,7 +12,7 @@
 <meta property="og:image" content="assets/img/og.jpg">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IRANYekanXFaNum-VF.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/frames/lg/000.webp">
+<link rel="preload" as="image" href="assets/frames/lg/119.webp">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -21,162 +21,182 @@
 
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="#top">ALIPOUR<small>JEWELRY</small></a>
-    <nav class="menu" aria-label="فهرست اصلی">
-      <a href="#collection">کالکشن مار</a>
-      <a href="products.html">جواهرات</a>
-      <a href="#house">خانه علیپور</a>
-      <a href="#contact">تماس</a>
-    </nav>
-    <a class="lnk" href="#contact">رزرو وقت <i>←</i></a>
-    <button class="burger" aria-label="فهرست" aria-expanded="false">
-      <svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16"/></svg>
-    </button>
+    <a class="mark" href="#top">ALIPOUR<span>JEWELRY</span></a>
+    <button class="navbtn" data-menu aria-expanded="false">فهرست</button>
   </div>
 </header>
 
-<div class="drawer" role="dialog" aria-label="فهرست">
-  <button class="drawer__x" aria-label="بستن">×</button>
-  <a href="#collection">کالکشن مار</a>
+<div class="menu" role="dialog" aria-label="فهرست" aria-hidden="true">
+  <button class="menu__x" data-menu-close>بستن</button>
+  <a href="#serpent">کالکشن مار</a>
   <a href="products.html">جواهرات</a>
-  <a href="#house">خانه علیپور</a>
-  <a href="#contact">تماس</a>
+  <a href="#atelier">کارگاه</a>
+  <a href="#visit">گالری</a>
 </div>
 
 <main id="main">
 <span id="top"></span>
 
-<!-- ══════════ THE JEWEL — hero ══════════ -->
-<section class="jewel" id="jewel">
-  <div class="jewel__track">
-    <div class="jewel__pin" data-jewel>
+<!-- ══════════════════ HERO — the plate ══════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__track">
+    <div class="hero__pin grain" data-jewel>
 
-      <span class="jewel__ghost" aria-hidden="true">ALIPOUR</span>
-      <div class="jewel__pool" aria-hidden="true"></div>
-
-      <img class="jewel__poster" src="assets/frames/lg/000.webp" alt="" aria-hidden="true" fetchpriority="high">
-      <canvas class="jewel__canvas" role="img"
-              aria-label="دستبند مار بولگاری، کد ۵۸۵۹۱ — با اسکرول یا کشیدن بچرخانید"></canvas>
-
-      <p class="jewel__hint">بکشید تا بچرخد</p>
-
-      <div class="jewel__band">
-        <div class="jewel__lines">
-          <div class="beat on" data-from="0" data-to="0.33">
-            <b>دستبند مار بولگاری</b>
-            <span>پیچیده به دور مچ؛ میان ظرافت و اقتدار.</span>
-          </div>
-          <div class="beat" data-from="0.33" data-to="0.66">
-            <b>نگاهی از زمرد</b>
-            <span>سر جواهرنشان، دو زمرد اشکی.</span>
-          </div>
-          <div class="beat" data-from="0.66" data-to="1.01">
-            <b>۵۴٫۷۹ گرم طلا</b>
-            <span>ساخت کارگاه علیپور، با گواهی اصالت.</span>
-          </div>
-        </div>
-        <p class="jewel__meta">کد ۵۸۵۹۱ — تبریز</p>
+      <div class="plate">
+        <div class="plate__light" aria-hidden="true"></div>
       </div>
 
-      <div class="jewel__rule" aria-hidden="true"><i></i></div>
+      <div class="stage">
+        <div class="shade shade--cast" aria-hidden="true"></div>
+        <div class="shade shade--contact" aria-hidden="true"></div>
+        <div class="jewel">
+          <img class="jewel__poster" src="assets/frames/lg/119.webp" alt="" aria-hidden="true" fetchpriority="high">
+          <canvas class="jewel__canvas" role="img"
+                  aria-label="دستبند مار بولگاری، کد ۵۸۵۹۱ — با اسکرول بچرخد"></canvas>
+        </div>
+      </div>
+
+      <div class="hero__type">
+        <div class="beat beat--1 on" data-from="0" data-to="0.36">
+          <span class="micro hero__eyebrow">تبریز — از ۱۳۴۰</span>
+          <h1>پیچیده به دور مچ،<br>آرام و بی‌صدا</h1>
+          <p class="hero__sub">دستبند مار — طلای ۱۸ عیار، الماس با گواهی <span class="lat">GIA</span></p>
+          <a class="cta" href="#visit"><u>رزرو نمایش حضوری</u></a>
+        </div>
+
+        <div class="beat beat--2" data-from="0.36" data-to="0.68">
+          <span class="micro hero__eyebrow">وزن</span>
+          <h2 class="d2">۵۴٫۷۹ گرم طلا</h2>
+          <p class="hero__sub" style="margin-top:20px">دست‌ساز در کارگاه علیپور.</p>
+        </div>
+
+        <div class="beat beat--3" data-from="0.68" data-to="1.01">
+          <span class="micro hero__eyebrow">سنگ</span>
+          <h2 class="d2">زمرد در چشم،<br>الماس در پوست</h2>
+          <p class="hero__sub" style="margin-top:20px">تراش و نشان به دست جواهرساز.</p>
+        </div>
+      </div>
+
+      <p class="micro ledger">کد ۵۸۵۹۱ — تبریز</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════ COLLECTION ══════════ -->
-<section class="sec" id="collection">
+<!-- ══════════════════ WRIST ══════════════════ -->
+<section class="bleed bleed--wrist grain">
+  <img src="assets/img/wrist.webp" alt="دستبند مار بر مچ" loading="lazy">
+  <div class="bleed__scrim" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="bleed__copy">
+      <h2 class="d2" data-rv>آنچه می‌ماند،<br>دیده می‌شود</h2>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ کالکشن مار — paper ══════════════════ -->
+<section class="band band--paper grain" id="serpent">
   <div class="wrap">
     <div class="head">
-      <div data-rv>
-        <span class="kicker">کالکشن مار</span>
-        <h2 class="d2">یک نماد، چهار روایت</h2>
-      </div>
-      <a class="lnk" href="products.html" data-rv>همه‌ی جواهرات <i>←</i></a>
+      <span class="kick" data-rv>کالکشن مار</span>
+      <h2 class="d2" data-rv>یک نماد، چهار روایت</h2>
     </div>
 
-    <div class="grid g4 stag" data-rv>
-      <a class="pc" href="https://alipourjewelry.com/product-%D8%AF%D8%B3%D8%AA%D8%A8%D9%86%D8%AF-%D9%85%D8%A7%D8%B1-%D8%A8%D9%88%D9%84%DA%AF%D8%A7%D8%B1%DB%8C/58591" target="_blank" rel="noopener">
-        <span class="pc__m"><img loading="lazy" src="assets/img/p/58591.webp" alt="دستبند مار بولگاری"></span>
-        <span class="pc__b">
-          <span class="pc__n">دستبند مار بولگاری</span>
-          <span class="pc__p">1,630,390,000<em>تومان</em></span>
+    <div class="plates stag" data-rv>
+      <a class="pl" href="https://alipourjewelry.com/product-%D8%AF%D8%B3%D8%AA%D8%A8%D9%86%D8%AF-%D9%85%D8%A7%D8%B1-%D8%A8%D9%88%D9%84%DA%AF%D8%A7%D8%B1%DB%8C/58591" target="_blank" rel="noopener">
+        <span class="pl__m"><img loading="lazy" src="assets/img/p/58591.webp" alt="دستبند مار بولگاری"></span>
+        <span class="pl__b">
+          <span class="pl__n">دستبند مار بولگاری</span>
+          <span class="pl__s">۵۴٫۷۹ گرم — کد ۵۸۵۹۱</span>
         </span>
       </a>
-      <a class="pc" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%DA%AF%D8%B1%D8%AF%D9%86%D8%A8%D9%86%D8%AF" target="_blank" rel="noopener">
-        <span class="pc__m"><img loading="lazy" src="assets/img/p/62691.webp" alt="گردنبند مار"></span>
-        <span class="pc__b">
-          <span class="pc__n">گردنبند مار</span>
-          <span class="pc__p">1,122,140,000<em>تومان</em></span>
+      <a class="pl" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%DA%AF%D8%B1%D8%AF%D9%86%D8%A8%D9%86%D8%AF" target="_blank" rel="noopener">
+        <span class="pl__m"><img loading="lazy" src="assets/img/p/62691.webp" alt="گردنبند مار"></span>
+        <span class="pl__b">
+          <span class="pl__n">گردنبند مار</span>
+          <span class="pl__s">طلای ۱۸ عیار — کد ۶۲۶۹۱</span>
         </span>
       </a>
-      <a class="pc" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%DA%AF%D9%88%D8%B4%D9%88%D8%A7%D8%B1%D9%87" target="_blank" rel="noopener">
-        <span class="pc__m"><img loading="lazy" src="assets/img/p/62693.webp" alt="گوشواره مار"></span>
-        <span class="pc__b">
-          <span class="pc__n">گوشواره مار</span>
-          <span class="pc__p">219,260,000<em>تومان</em></span>
+      <a class="pl" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%DA%AF%D9%88%D8%B4%D9%88%D8%A7%D8%B1%D9%87" target="_blank" rel="noopener">
+        <span class="pl__m"><img loading="lazy" src="assets/img/p/62693.webp" alt="گوشواره مار"></span>
+        <span class="pl__b">
+          <span class="pl__n">گوشواره مار</span>
+          <span class="pl__s">طلای ۱۸ عیار — کد ۶۲۶۹۳</span>
         </span>
       </a>
-      <a class="pc" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%D8%AF%D8%B3%D8%AA%D8%A8%D9%86%D8%AF" target="_blank" rel="noopener">
-        <span class="pc__m"><img loading="lazy" src="assets/img/p/61387.webp" alt="دستبند النگویی پوست مار"></span>
-        <span class="pc__b">
-          <span class="pc__n">دستبند النگویی پوست مار</span>
-          <span class="pc__p">940,120,000<em>تومان</em></span>
+      <a class="pl" href="https://alipourjewelry.com/category/%D8%B7%D9%84%D8%A7/%D8%AF%D8%B3%D8%AA%D8%A8%D9%86%D8%AF" target="_blank" rel="noopener">
+        <span class="pl__m"><img loading="lazy" src="assets/img/p/61387.webp" alt="دستبند النگویی پوست مار"></span>
+        <span class="pl__b">
+          <span class="pl__n">دستبند النگویی پوست مار</span>
+          <span class="pl__s">طلای ۱۸ عیار — کد ۶۱۳۸۷</span>
         </span>
       </a>
+    </div>
+
+    <p style="margin-top:clamp(34px,4vw,56px)" data-rv>
+      <a class="lnk" href="products.html">همه‌ی جواهرات</a>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ کارگاه ══════════════════ -->
+<section class="bleed bleed--atelier grain" id="atelier">
+  <img src="assets/img/atelier.webp" alt="کارگاه ساخت جواهری علیپور" loading="lazy">
+  <div class="bleed__scrim" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="bleed__copy">
+      <span class="micro" style="color:var(--metal);display:block;margin-bottom:20px" data-rv>کارگاه</span>
+      <h2 class="d2" data-rv>آنچه با دست<br>ساخته می‌شود</h2>
+      <p class="body dim" style="margin-top:26px" data-rv>
+        آنچه حاج حمید علیپور در سال ۱۳۴۰ آغاز کرد، امروز به دست نسل دوم ادامه دارد.
+        هر قطعه در کارگاه خودمان طراحی و ساخته می‌شود.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- ══════════ THE HOUSE ══════════ -->
-<section class="sec" id="house">
-  <div class="wrap state">
-    <div class="state__img" data-rv>
-      <img loading="lazy" src="assets/img/wrist.webp" alt="دستبند مار بر مچ">
+<div class="band band--ink" style="padding-block:0">
+  <div class="wrap">
+    <div class="facts">
+      <div><b>۱۳۴۰</b><span class="micro faint">بنیان‌گذار — حاج حمید علیپور</span></div>
+      <div><b><span class="lat">GIA</span></b><span class="micro faint">گواهی بین‌المللی الماس</span></div>
+      <div><b><span class="lat">ISO 9001</span></b><span class="micro faint">کنترل کیفیت تولید</span></div>
     </div>
-    <div>
-      <span class="kicker" data-rv>خانه علیپور</span>
-      <h2 class="d1" data-rv style="margin-bottom:1.6rem">از سال ۱۳۴۰،<br>در تبریز</h2>
-      <p class="lead" data-rv style="margin-bottom:1.4rem">
-        آنچه حاج حمید علیپور آغاز کرد، امروز به دست نسل دوم ادامه دارد.
-        هر برلیان با گواهی <span class="lat">GIA</span> عرضه می‌شود و تمام
-        مراحل ساخت زیر استاندارد <span class="lat">ISO 9001</span> کنترل می‌گردد.
-      </p>
-      <p class="lead" data-rv style="margin-bottom:2.4rem">
-        هر قطعه در کارگاه خودمان طراحی و ساخته می‌شود — و می‌تواند
-        کاملاً بر اساس خواست شما سفارشی شود.
-      </p>
-      <a class="lnk" href="#contact" data-rv>سفارش ساخت اختصاصی <i>←</i></a>
+  </div>
+</div>
+
+<!-- ══════════════════ جواهرات — index ══════════════════ -->
+<section class="band band--field grain" id="pieces">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick" data-rv>گالری</span>
+      <h2 class="d2" data-rv>جواهرات</h2>
     </div>
+    <nav class="idx stag" data-rv aria-label="دسته‌بندی‌ها">
+      <a href="products.html#ring"><span class="idx__n">انگشتر</span><span class="idx__c">جواهر و طلا</span></a>
+      <a href="products.html#necklace"><span class="idx__n">گردنبند</span><span class="idx__c">جواهر و طلا</span></a>
+      <a href="products.html#earring"><span class="idx__n">گوشواره</span><span class="idx__c">جواهر و طلا</span></a>
+      <a href="products.html#bracelet"><span class="idx__n">دستبند</span><span class="idx__c">جواهر و طلا</span></a>
+      <a href="products.html#pendant"><span class="idx__n">آویز</span><span class="idx__c">جواهر</span></a>
+      <a href="products.html#set"><span class="idx__n">سرویس</span><span class="idx__c">جواهر</span></a>
+    </nav>
   </div>
 </section>
 
-<!-- ══════════ CONTACT ══════════ -->
-<section class="sec" id="contact">
-  <div class="wrap state">
-    <div>
-      <span class="kicker" data-rv>تماس</span>
-      <h2 class="d1" data-rv>به گالری دعوت‌اید</h2>
-      <div class="info">
-        <div data-rv>
-          <h4>گالری</h4>
-          <p>تبریز، مجتمع تجاری لاله پارک، طبقه‌ی همکف</p>
-        </div>
-        <div data-rv>
-          <h4>تلفن</h4>
-          <p><a class="lnk" href="tel:+984131180000">۰۴۱–۳۱۱۸</a></p>
-        </div>
-        <div data-rv>
-          <h4>ایمیل</h4>
-          <p><a class="lnk lat" href="mailto:info@alipourjewelry.com">info@alipourjewelry.com</a></p>
-        </div>
-        <div data-rv>
-          <a class="lnk" href="https://instagram.com/alipour.jewelry" target="_blank" rel="noopener">اینستاگرام <i>←</i></a>
-        </div>
-      </div>
+<!-- ══════════════════ گالری ══════════════════ -->
+<section class="band band--brand grain" id="visit">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick" data-rv>گالری</span>
+      <h2 class="d2" data-rv>به گالری دعوت‌اید</h2>
     </div>
-    <div class="state__img" data-rv>
-      <img loading="lazy" src="assets/img/atelier.webp" alt="کارگاه ساخت جواهری علیپور">
+    <div class="facts" style="border-top:1px solid var(--hair)">
+      <div data-rv><b>نشانی</b><span class="micro faint">تبریز، مجتمع تجاری لاله پارک، طبقه‌ی همکف</span></div>
+      <div data-rv><b><a href="tel:+984131180000">۰۴۱–۳۱۱۸</a></b><span class="micro faint">تلفن گالری</span></div>
+      <div data-rv><b><a class="lat" href="mailto:info@alipourjewelry.com">info@alipourjewelry.com</a></b><span class="micro faint">ایمیل</span></div>
     </div>
+    <p style="margin-top:clamp(38px,4.6vw,64px)" data-rv>
+      <a class="cta" href="https://alipourjewelry.com/contact" target="_blank" rel="noopener"><u>رزرو نمایش حضوری</u></a>
+    </p>
   </div>
 </section>
 
@@ -184,14 +204,13 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <p class="small">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
+    <a class="mark" href="#top" style="font-size:15px">ALIPOUR<span>JEWELRY</span></a>
     <nav aria-label="پیوندها">
       <a href="products.html">جواهرات</a>
-      <a href="https://alipourjewelry.com/collections" target="_blank" rel="noopener">کالکشن‌ها</a>
-      <a href="https://alipourjewelry.com/page/show/howbuy" target="_blank" rel="noopener">شرایط خرید</a>
-      <a href="https://alipourjewelry.com/contact" target="_blank" rel="noopener">تماس</a>
+      <a href="#visit">گالری</a>
       <a href="https://instagram.com/alipour.jewelry" target="_blank" rel="noopener">اینستاگرام</a>
     </nav>
+    <p class="micro faint">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
   </div>
 </footer>
 
