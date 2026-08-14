@@ -13,6 +13,13 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IRANYekanXFaNum-VF.woff2" crossorigin>
 <link rel="preload" as="image" href="assets/frames/lg/119.webp">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="علیپور">
+<meta name="application-name" content="علیپور">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -21,13 +28,14 @@
 
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="mark" href="#top">ALIPOUR<span>JEWELRY</span></a>
+    <a class="logo" href="#top" aria-label="جواهری علیپور"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg><span class="logo__txt"><b>ALIPOUR</b><i>JEWELRY</i></span></a>
     <button class="navbtn" data-menu aria-expanded="false">فهرست</button>
   </div>
 </header>
 
 <div class="menu" role="dialog" aria-label="فهرست" aria-hidden="true">
   <button class="menu__x" data-menu-close>بستن</button>
+  <span class="logo logo--stack menu__logo" aria-hidden="true"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg></span>
   <a href="#serpent">کالکشن مار</a>
   <a href="products.html">جواهرات</a>
   <a href="#atelier">کارگاه</a>
@@ -135,6 +143,8 @@
     <p style="margin-top:clamp(34px,4vw,56px)" data-rv>
       <a class="lnk" href="products.html">همه‌ی جواهرات</a>
     </p>
+
+    <div class="markrule" style="margin-top:clamp(56px,7vw,110px)" data-rv><svg viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg></div>
   </div>
 </section>
 
@@ -204,7 +214,7 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <a class="mark" href="#top" style="font-size:15px">ALIPOUR<span>JEWELRY</span></a>
+    <a class="logo" href="#top" aria-label="جواهری علیپور"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg><span class="logo__txt"><b>ALIPOUR</b><i>JEWELRY</i></span></a>
     <nav aria-label="پیوندها">
       <a href="products.html">جواهرات</a>
       <a href="#visit">گالری</a>
@@ -213,6 +223,14 @@
     <p class="micro faint">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
   </div>
 </footer>
+
+
+<div class="install" role="dialog" aria-label="افزودن به صفحه‌ی اصلی" hidden>
+  <svg viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg>
+  <p><b>افزودن به صفحه‌ی اصلی</b>علیپور را مثل یک اپلیکیشن باز کنید.</p>
+  <button data-install>افزودن</button>
+  <button class="x" data-install-close aria-label="بستن">×</button>
+</div>
 
 <script src="js/app.js" defer></script>
 <script src="js/jewel.js" defer></script>

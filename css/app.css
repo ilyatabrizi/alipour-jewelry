@@ -162,10 +162,10 @@ h1,.d1{font-variation-settings:'wght' 200;font-size:var(--d1);
   padding-block:.42em;border-bottom:1px solid var(--hair);
   opacity:0;transform:translateY(20px)}
 .menu.open a{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.menu.open a:nth-child(2){transition-delay:.06s}
-.menu.open a:nth-child(3){transition-delay:.12s}
-.menu.open a:nth-child(4){transition-delay:.18s}
-.menu.open a:nth-child(5){transition-delay:.24s}
+.menu.open a:nth-of-type(1){transition-delay:.06s}
+.menu.open a:nth-of-type(2){transition-delay:.12s}
+.menu.open a:nth-of-type(3){transition-delay:.18s}
+.menu.open a:nth-of-type(4){transition-delay:.24s}
 .menu__x{position:absolute;inset-block-start:22px;inset-inline-end:var(--gut);
   font-size:12px;letter-spacing:.18em;font-variation-settings:'wght' 500}
 
@@ -428,3 +428,66 @@ h1,.d1{font-variation-settings:'wght' 200;font-size:var(--d1);
 
 /* the canvas fills the aspect-locked .jewel box */
 .jewel__canvas{position:absolute;inset:0;width:100%;height:100%}
+
+/* ==========================================================================
+   THE MARK — Alipour's lemniscate lockup
+   Rebuilt as vector from the house artwork so it stays crisp at any size.
+   Stroke is currentColor, so the lockup inverts with the band it sits on.
+   ========================================================================== */
+/* the lockup is a Latin construction — mark leads, wordmark follows —
+   so it sets LTR internally even though the page is RTL */
+.logo{display:inline-flex;align-items:center;gap:13px;color:var(--bone);direction:ltr}
+.logo__mark{width:42px;height:auto;flex:none;color:var(--metal);
+  transition:color .5s var(--ease)}
+.logo__txt{display:inline-flex;align-items:baseline;gap:10px;
+  font-family:'YekanLat',sans-serif;direction:ltr}
+.logo__txt b{font-size:18px;font-variation-settings:'wght' 300;letter-spacing:.34em;font-weight:400}
+.logo__txt i{font-style:normal;font-size:8.5px;font-variation-settings:'wght' 500;
+  letter-spacing:.38em;color:var(--metal-dim);
+  padding-inline-start:10px;border-inline-start:1px solid var(--hair)}
+.logo:hover .logo__mark{color:var(--metal-dim)}
+
+/* stacked lockup — the house arrangement: mark, wordmark, JEWELRY */
+.logo--stack{flex-direction:column;gap:14px}
+.logo--stack .logo__mark{width:84px}
+.logo--stack .logo__txt{flex-direction:column;align-items:center;gap:8px}
+.logo--stack .logo__txt i{border-inline-start:0;padding-inline-start:0}
+
+/* the nav flips the lockup to ink over paper bands */
+.nav.onpaper .logo{color:var(--paper-ink)}
+.nav.onpaper .logo__mark{color:#8a7660}
+.nav.onpaper .logo__txt i{color:#8a7660;border-inline-start-color:rgba(27,28,24,.2)}
+
+/* the mark as a rule ornament between bands */
+.markrule{display:flex;align-items:center;gap:clamp(18px,3vw,40px)}
+.markrule::before,.markrule::after{content:'';flex:1;height:1px;background:var(--hair)}
+.markrule svg{width:clamp(44px,5vw,68px);height:auto;color:var(--metal-dim);flex:none}
+.band--paper .markrule::before,.band--paper .markrule::after{background:rgba(27,28,24,.16)}
+.band--paper .markrule svg{color:#8a7660}
+
+/* the mark heads the full-screen menu */
+.menu__logo{margin-bottom:clamp(30px,5vh,58px)}
+.menu__logo .logo__mark{width:58px}
+
+@media (max-width:600px){
+  .logo__mark{width:34px}
+  .logo__txt b{font-size:15px;letter-spacing:.3em}
+  .logo__txt i{font-size:7.5px}
+}
+
+/* ---------- INSTALL PROMPT ---------- */
+.install{
+  position:fixed;z-index:80;inset-inline:var(--gut);inset-block-end:calc(var(--gut) * .8);
+  margin-inline:auto;max-width:440px;
+  display:none;align-items:center;gap:16px;
+  padding:14px 18px;background:rgba(3,16,10,.92);backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);border:1px solid var(--hair);
+  transform:translateY(16px);opacity:0;transition:opacity .6s var(--ease),transform .6s var(--ease);
+}
+.install.show{display:flex;opacity:1;transform:none}
+.install svg{width:38px;height:auto;color:var(--metal);flex:none}
+.install p{flex:1;font-size:13px;line-height:1.6;color:var(--bone-6)}
+.install b{display:block;color:var(--bone);font-variation-settings:'wght' 400;font-size:14px}
+.install button{font-size:12px;font-variation-settings:'wght' 500;letter-spacing:.12em;
+  color:var(--metal);white-space:nowrap}
+.install .x{color:var(--bone-4);font-size:16px;line-height:1}

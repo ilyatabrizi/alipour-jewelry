@@ -161,4 +161,66 @@
   if (y) y.textContent = new Date().getFullYear();
 
   onScroll();
+
+  /* ---------- PWA ---------- */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* not fatal */ });
+    });
+  }
+
+  /* Chrome/Edge fire beforeinstallprompt; we hold it and offer our own card
+     rather than letting the browser's mini-infobar interrupt the hero.
+     iOS has no such event — Safari installs via the Share sheet — so there we
+     show a short instruction instead, and only once. */
+  var card = document.querySelector('.install');
+  if (card) {
+    var deferred = null;
+    var KEY = 'alipour.install.dismissed';
+    var dismissed = false;
+    try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
+
+    var standalone = window.matchMedia('(display-mode: standalone)').matches ||
+                     window.navigator.standalone === true;
+
+    function show() {
+      if (dismissed || standalone) return;
+      card.hidden = false;
+      requestAnimationFrame(function () { card.classList.add('show'); });
+    }
+    function hide(remember) {
+      card.classList.remove('show');
+      setTimeout(function () { card.hidden = true; }, 600);
+      if (remember) { try { localStorage.setItem(KEY, '1'); } catch (e) {} }
+    }
+
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferred = e;
+      setTimeout(show, 2600);          // let the hero land first
+    });
+
+    var addBtn = card.querySelector('[data-install]');
+    if (addBtn) addBtn.addEventListener('click', function () {
+      if (!deferred) { hide(true); return; }
+      deferred.prompt();
+      deferred.userChoice.then(function () { deferred = null; hide(true); });
+    });
+    var xBtn = card.querySelector('[data-install-close]');
+    if (xBtn) xBtn.addEventListener('click', function () { hide(true); });
+
+    window.addEventListener('appinstalled', function () { hide(true); });
+
+    /* iOS Safari: no install event exists, so offer the Share-sheet route */
+    var iOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    var webkit = /safari/i.test(navigator.userAgent) && !/crios|fxios|edgios/i.test(navigator.userAgent);
+    if (iOS && webkit && !standalone && !dismissed) {
+      var t = card.querySelector('p');
+      if (t) t.innerHTML = '<b>افزودن به صفحه‌ی اصلی</b>' +
+        'دکمه‌ی هم‌رسانی <span class="lat">&#x21E7;</span> را بزنید و ' +
+        '«Add to Home Screen» را انتخاب کنید.';
+      if (addBtn) addBtn.textContent = 'باشد';
+      setTimeout(show, 3000);
+    }
+  }
 })();

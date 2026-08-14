@@ -8,12 +8,20 @@
 <meta name="description" content="گالری جواهرات و طلای علیپور — انگشتر، گردنبند، گوشواره، دستبند، آویز و سرویس.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IRANYekanXFaNum-VF.woff2" crossorigin>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="علیپور">
+<meta name="application-name" content="علیپور">
 <link rel="stylesheet" href="css/app.css">
 <style>
   /* the catalogue lives entirely on paper */
   html,body{background:var(--paper);color:var(--paper-ink)}
-  .nav .mark{color:var(--paper-ink)}
-  .nav .mark span{color:#8a7660;border-inline-start-color:rgba(27,28,24,.18)}
+  .nav .logo{color:var(--paper-ink)}
+  .nav .logo__mark{color:#8a7660}
+  .nav .logo__txt i{color:#8a7660;border-inline-start-color:rgba(27,28,24,.18)}
   .navbtn{color:rgba(27,28,24,.6)}
   .navbtn:hover{color:var(--paper-ink)}
   .nav.stuck{background:linear-gradient(var(--paper),rgba(239,233,221,0))}
@@ -33,13 +41,14 @@
 
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="mark" href="index.html">ALIPOUR<span>JEWELRY</span></a>
+    <a class="logo" href="index.html" aria-label="جواهری علیپور"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg><span class="logo__txt"><b>ALIPOUR</b><i>JEWELRY</i></span></a>
     <button class="navbtn" data-menu aria-expanded="false">فهرست</button>
   </div>
 </header>
 
 <div class="menu" role="dialog" aria-label="فهرست" aria-hidden="true">
   <button class="menu__x" data-menu-close>بستن</button>
+  <span class="logo logo--stack menu__logo" aria-hidden="true"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg></span>
   <a href="index.html#serpent">کالکشن مار</a>
   <a href="products.html">جواهرات</a>
   <a href="index.html#atelier">کارگاه</a>
@@ -67,7 +76,7 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <a class="mark" href="index.html" style="font-size:15px">ALIPOUR<span>JEWELRY</span></a>
+    <a class="logo" href="index.html" aria-label="جواهری علیپور"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg><span class="logo__txt"><b>ALIPOUR</b><i>JEWELRY</i></span></a>
     <nav aria-label="پیوندها">
       <a href="index.html">خانه</a>
       <a href="index.html#visit">گالری</a>
@@ -76,6 +85,14 @@
     <p class="micro">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
   </div>
 </footer>
+
+
+<div class="install" role="dialog" aria-label="افزودن به صفحه‌ی اصلی" hidden>
+  <svg viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg>
+  <p><b>افزودن به صفحه‌ی اصلی</b>علیپور را مثل یک اپلیکیشن باز کنید.</p>
+  <button data-install>افزودن</button>
+  <button class="x" data-install-close aria-label="بستن">×</button>
+</div>
 
 <script src="js/app.js" defer></script>
 </body>

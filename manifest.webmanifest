@@ -1,0 +1,35 @@
+{
+  "name": "جواهری علیپور",
+  "short_name": "علیپور",
+  "description": "طراحی و ساخت طلا و جواهر اصیل در تبریز، از سال ۱۳۴۰.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./?src=pwa",
+  "scope": "./",
+  "id": "/alipour-jewelry/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e2d1a",
+  "theme_color": "#071b10",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    { "src": "assets/icon/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icon/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "کالکشن مار",
+      "short_name": "کالکشن مار",
+      "url": "./#serpent",
+      "icons": [{ "src": "assets/icon/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "جواهرات",
+      "short_name": "جواهرات",
+      "url": "./products.html",
+      "icons": [{ "src": "assets/icon/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
