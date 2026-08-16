@@ -90,10 +90,26 @@
     var a = document.createElement('a');
     a.className = 'pl';
     a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
+    var d = 'data-name="' + p.name + '" data-cat="' + (FA[p.cat] || '') + '" ' +
+            'data-price="' + (p.price || '') + '" data-url="' + p.url + '"';
     a.innerHTML =
+      '<span class="pl__act">' +
+        '<button class="iconbtn" data-save="' + p.code + '" ' + d + ' aria-label="نشان کردن" aria-pressed="false">' +
+          '<svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">' +
+          '<path d="M12 20s-7-4.4-7-9.2A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.8C19 15.6 12 20 12 20z"/></svg>' +
+        '</button>' +
+        '<button class="iconbtn" data-add="' + p.code + '" ' + d + ' aria-label="افزودن به سبد">' +
+          '<svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">' +
+          '<path d="M6 8h12l-1 12H7z"/><path d="M9.2 8V6.4a2.8 2.8 0 0 1 5.6 0V8"/></svg>' +
+        '</button>' +
+      '</span>' +
       '<span class="pl__m"><img loading="lazy" decoding="async" src="assets/img/p/' + p.code + '.webp" alt="' + p.name + '"></span>' +
       '<span class="pl__b"><span class="pl__n">' + p.name + '</span>' +
       '<span class="pl__s">' + meta(p) + '</span></span>';
+    if (window.ALP && ALP.Store.isSaved(p.code)) {
+      var sv = a.querySelector('[data-save]');
+      sv.classList.add('on'); sv.setAttribute('aria-pressed', 'true');
+    }
     return a;
   }
 

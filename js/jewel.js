@@ -230,9 +230,18 @@
     jewel.style.setProperty('--zoom', zoom.toFixed(4));
     jewel.style.setProperty('--rise', rise.toFixed(1) + 'px');
 
-    beats.forEach(function (b) {
-      b.classList.toggle('on', prog >= +b.dataset.from && prog < +b.dataset.to);
+    var n = 1;
+    beats.forEach(function (b, i) {
+      var on = prog >= +b.dataset.from && prog < +b.dataset.to;
+      b.classList.toggle('on', on);
+      if (on) n = i + 1;
     });
+    pin.style.setProperty('--p', prog.toFixed(3));
+    var c = pin.querySelector('[data-beat-n]');
+    if (c) {
+      var fa = ['۰۱', '۰۲', '۰۳'];
+      c.textContent = (fa[n - 1] || '۰۱') + ' ⁄ ۰۳';
+    }
   }
 
   /* ---------- drag ---------- */

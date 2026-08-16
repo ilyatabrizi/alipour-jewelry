@@ -1,0 +1,552 @@
+{
+ "ui": {
+  "account": {
+   "signedOutTitle": "دفتری به نام شما",
+   "signedOutBody": "آنچه می‌پسندید، وقتی که برای نمایش می‌گیرید و سفارشی که به کارگاه می‌سپارید، همه در یک دفتر ثبت می‌شود؛ تا دفعهٔ بعد لازم نباشد چیزی را دوباره بگویید.",
+   "signInLabel": "ورود",
+   "registerLabel": "گشودن دفتر",
+   "fields": [
+    {
+     "key": "fullName",
+     "label": "نام و نام خانوادگی",
+     "type": "text",
+     "placeholder": "همان نامی که روی گواهی ثبت می‌شود"
+    },
+    {
+     "key": "mobile",
+     "label": "شمارهٔ همراه",
+     "type": "tel",
+     "placeholder": "۰۹۱۲ ۳۴۵ ۶۷۸۹"
+    },
+    {
+     "key": "email",
+     "label": "ایمیل",
+     "type": "email",
+     "placeholder": "you@example.com"
+    },
+    {
+     "key": "password",
+     "label": "رمز عبور",
+     "type": "password",
+     "placeholder": "دست‌کم هشت نویسه"
+    },
+    {
+     "key": "city",
+     "label": "شهر",
+     "type": "text",
+     "placeholder": "تبریز"
+    }
+   ],
+   "sections": [
+    {
+     "id": "saved",
+     "title": "قطعه‌های نشان‌شده",
+     "empty": "هنوز چیزی را کنار نگذاشته‌اید. در فهرست جواهرات، هر قطعه را می‌توانید برای بعد نشان کنید."
+    },
+    {
+     "id": "appointments",
+     "title": "نمایش‌های حضوری",
+     "empty": "قراری ثبت نشده است. یک ساعت در گالری لاله پارک، به نام شما و بدون مراجعه‌کنندهٔ دیگر."
+    },
+    {
+     "id": "orders",
+     "title": "سفارش‌ها و ساخت‌های اختصاصی",
+     "empty": "هنوز سفارشی ثبت نشده. هر ساخت از طرح تا قالب و نشاندن سنگ، مرحله‌به‌مرحله همین‌جا دیده می‌شود."
+    },
+    {
+     "id": "certificates",
+     "title": "گواهی‌ها و اسناد",
+     "empty": "پس از تحویل نخستین قطعه، گواهی الماس و سند وزن و عیار آن همیشه اینجا در دسترس شماست."
+    },
+    {
+     "id": "details",
+     "title": "مشخصات شما",
+     "empty": "شمارهٔ همراه و نشانی را کامل کنید تا تماس و تحویل بی‌وقفه انجام شود."
+    }
+   ],
+   "benefits": [
+    "رزرو اتاق خصوصی گالری؛ قطعه پیش از رسیدن شما آمادهٔ نمایش است.",
+    "پیگیری مرحله‌به‌مرحلهٔ سفارش‌های ساخت، از طرح تا نشاندن سنگ.",
+    "نگهداری گواهی <span dir=\"ltr\">GIA</span> و سند وزن و عیار هر قطعه، همیشه در دسترس.",
+    "یادآوری رسیدگی دوره‌ای: شست‌وشو، پولیش و بازبینی چنگ‌ها.",
+    "خبر کالکشن تازه، پیش از آنکه در ویترین گذاشته شود.",
+    "یک مشاور مشخص که پروندهٔ شما را می‌شناسد."
+   ]
+  },
+  "bag": {
+   "title": "سبد شما",
+   "emptyTitle": "هنوز چیزی برنگزیده‌اید",
+   "emptyBody": "انتخاب یک جواهر عجله ندارد. فهرست جواهرات را ببینید، یا وقتی برای نمایش حضوری بگیرید تا قطعه را در نور گالری ببینید.",
+   "emptyCta": "دیدن جواهرات",
+   "summaryLabels": [
+    "تعداد قطعه",
+    "وزن کل طلا",
+    "اجرت ساخت",
+    "بسته‌بندی و بیمهٔ ارسال",
+    "مبلغ قابل‌پرداخت"
+   ],
+   "checkoutNote": "سفارش‌های سنگین با پرداخت آنلاین بسته نمی‌شود. پس از ثبت، مشاور شما تماس می‌گیرد تا وزن روز، اجرت و شیوهٔ تسویه را تأیید کند؛ تا آن لحظه قطعه به نام شما محفوظ می‌ماند.",
+   "checkoutCta": "ثبت سفارش و تماس مشاور"
+  },
+  "tabs": [
+   {
+    "id": "home",
+    "fa": "خانه",
+    "href": "index.html"
+   },
+   {
+    "id": "catalogue",
+    "fa": "جواهرات",
+    "href": "products.html"
+   },
+   {
+    "id": "journal",
+    "fa": "روایت‌ها",
+    "href": "journal.html"
+   },
+   {
+    "id": "bag",
+    "fa": "سبد",
+    "href": "bag.html"
+   },
+   {
+    "id": "account",
+    "fa": "حساب",
+    "href": "account.html"
+   }
+  ]
+ },
+ "blog": {
+  "intro": "دفترچهٔ خانهٔ علیپور؛ یادداشت‌هایی دربارهٔ سنگ، ساخت، نقش مار و آنچه از سال ۱۳۴۰ تا امروز در تبریز گذشته است.",
+  "posts": [
+   {
+    "slug": "serpent-in-persian-art",
+    "title": "مار، پیش از آنکه نماد شود",
+    "kicker": "نقش و نماد",
+    "excerpt": "چرا پیکر خمیدهٔ مار قرن‌هاست از مفرغ‌های لرستان تا حاشیهٔ قالی‌های آذربایجان تکرار می‌شود.",
+    "readMin": 4,
+    "date": "۱۴۰۵/۰۵/۲۰",
+    "image": "assets/img/p/58591.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "مار، پیش از آنکه نماد شود، شکل بود. روی مفرغ‌های لرستان، در حاشیهٔ قالی‌های آذربایجان و لابه‌لای گره‌های کاشی‌کاری تبریز، پیکر خمیدهٔ او قرن‌هاست تکرار می‌شود؛ گاه نگهبان گنج، گاه نشانهٔ آبی که از دل زمین بیرون می‌زند."
+     },
+     {
+      "type": "h",
+      "text": "دو چهرهٔ یک نقش"
+     },
+     {
+      "type": "p",
+      "text": "در شاهنامه، مار چهرهٔ تاریکش را نشان می‌دهد و بر دوش ضحاک می‌نشیند. اما همان جانور، در طب کهن و در نقش‌مایه‌های تزیینی، نشانهٔ درمان و تجدید است؛ چون هر سال پوست می‌اندازد و تنی تازه بیرون می‌کشد. همین دوگانگی است که نقش را زنده نگه داشته: چیزی که هم می‌ترساند و هم می‌رباید."
+     },
+     {
+      "type": "quote",
+      "text": "مار تنها جانوری است که برای بزرگ‌شدن باید آنچه را بوده است رها کند."
+     },
+     {
+      "type": "p",
+      "text": "در طلا، این معنا شکل تازه‌ای می‌گیرد. حلقه‌ای که دور مچ می‌پیچد سر و ته ندارد؛ آغاز و پایانش در هم گم می‌شود. شاید به همین دلیل است که زرگرانِ شرق و غرب، هر دو، قرن‌ها به این فرم بازگشته‌اند."
+     },
+     {
+      "type": "p",
+      "text": "در کارگاه، ساخت این فرم بیش از هر چیز کار صبر است. فلس‌ها باید یکی‌یکی بنشینند، خط پشت باید بی‌وقفه بچرخد و چشم‌ها — که در دستبند شمارهٔ ۵۸۵۹۱ زمرد است — باید دقیقاً همان‌جا قرار بگیرند که نگاه، ناخودآگاه، اول به آن می‌رسد."
+     }
+    ]
+   },
+   {
+    "slug": "house-since-1340",
+    "title": "خانه‌ای که در ۱۳۴۰ باز شد",
+    "kicker": "تاریخ خانه",
+    "excerpt": "از یک ویترین کوچک و ترازوی دوکفه‌ای تا گالری امروز؛ سه نسل و یک سنجهٔ ثابت.",
+    "readMin": 4,
+    "date": "۱۴۰۵/۰۴/۲۹",
+    "image": "assets/img/atelier.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "خانهٔ علیپور حدود سال ۱۳۴۰ با یک ویترین کوچک و یک ترازوی دوکفه‌ای آغاز شد. حاج حمید علیپور آن روزها بیش از آنکه فروشنده باشد سازنده بود؛ مشتری با قطعه‌ای قدیمی می‌آمد و با چیزی تازه بیرون می‌رفت."
+     },
+     {
+      "type": "h",
+      "text": "از بازار امیر تا لاله پارک"
+     },
+     {
+      "type": "p",
+      "text": "در سال ۱۳۶۹ شعبهٔ دوم در بازار بزرگ امیر تبریز باز شد؛ در همان راهرویی که بوی موم و صدای چکش‌های ریز، از صبح تا غروب قطع نمی‌شد. بخش زیادی از آنچه امروز می‌دانیم، آنجا و در گفت‌وگو با استادکارهای همان بازار آموخته شده است."
+     },
+     {
+      "type": "p",
+      "text": "از سال ۱۳۸۰ سرپرستیِ کار به اصغر علیپور، پسر بنیان‌گذار، رسید. ویترین‌ها عوض شدند، ابزارها دقیق‌تر شدند و دفترها به رایانه رفتند؛ اما آنچه تغییر نکرد سنجهٔ تحویل بود."
+     },
+     {
+      "type": "quote",
+      "text": "قطعه‌ای را تحویل می‌دهیم که حاضر باشیم فردا خودمان آن را پس بگیریم."
+     },
+     {
+      "type": "p",
+      "text": "در سال ۱۳۹۵ سامانهٔ کیفیت خانه با استاندارد <span dir=\"ltr\">ISO 9001</span> تطبیق داده شد؛ نه برای قاب‌کردن یک گواهی، بلکه برای اینکه هر مرحله — از تأمین سنگ تا بسته‌بندی — نوشته و قابل‌پیگیری باشد. امروز گالری در طبقهٔ همکف مجتمع تجاری لاله پارک تبریز است و کاتالوگ ۱۷۲ قطعه را در بر می‌گیرد."
+     }
+    ]
+   },
+   {
+    "slug": "reading-a-gia-report",
+    "title": "آنچه در برگهٔ <span dir=\"ltr\">GIA</span> نوشته شده است",
+    "kicker": "گواهی و اصالت",
+    "excerpt": "چهار سنجه‌ای که سرنوشت یک الماس را تعیین می‌کنند و اینکه کدام‌یک کار انسان است.",
+    "readMin": 4,
+    "date": "۱۴۰۵/۰۴/۱۱",
+    "image": "assets/img/atelier.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "هر الماسی که از این خانه بیرون می‌رود یک برگه همراه دارد: گزارش آزمایشگاه <span dir=\"ltr\">GIA</span>. آن برگه نه تعارف است و نه برچسب تبلیغاتی؛ سندی است که می‌گوید سنگ شما دقیقاً چیست."
+     },
+     {
+      "type": "h",
+      "text": "چهار سنجه، یک نتیجه"
+     },
+     {
+      "type": "p",
+      "text": "وزن به قیراط، رنگ در پله‌های الفبایی از بی‌رنگ به سمت زردِ ملایم، پاکی بر پایهٔ آنچه زیر بزرگ‌نمایی ده‌برابر دیده می‌شود، و تراش. از این چهار، تراش تنها سنجه‌ای است که تماماً کار انسان است؛ چند درجه خطا در زاویه‌ها کافی است تا نور به‌جای آنکه از بالا برگردد از پهلو بیرون بزند و سنگ خاموش بماند."
+     },
+     {
+      "type": "quote",
+      "text": "رنگ و پاکی را طبیعت تعیین می‌کند؛ تراش را تصمیم یک نفر."
+     },
+     {
+      "type": "p",
+      "text": "روی کمربند بیشتر سنگ‌های گواهی‌دار، شمارهٔ گزارش با لیزر حک شده است. با یک ذره‌بین ساده می‌توان آن را دید و با شمارهٔ روی برگه مقایسه کرد. این کار سی ثانیه طول می‌کشد و ما همیشه پیشنهاد می‌کنیم پیش از تحویل، خودتان انجامش دهید."
+     },
+     {
+      "type": "p",
+      "text": "توصیهٔ ما ساده است: پیش از پرداختن به قاب و طرح، برگه را بخوانید. اگر جایی گواهی نداشت یا شنیدید «برای این وزن لازم نیست»، همان یک جمله برای تصمیم‌گیری کافی است."
+     }
+    ]
+   },
+   {
+    "slug": "the-serpent-collection",
+    "title": "کالکشن مار، چهار قطعه",
+    "kicker": "کالکشن",
+    "excerpt": "دستبند، گردنبند، گوشواره و النگو؛ یک نقش که چهار بار با لحن متفاوت تکرار شده است.",
+    "readMin": 3,
+    "date": "۱۴۰۵/۰۳/۲۳",
+    "image": "assets/img/wrist.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "کالکشن مار از یک قطعه شروع شد و به چهار رسید: دستبند ۵۸۵۹۱، گردنبند ۶۲۶۹۱، گوشوارهٔ ۶۲۶۹۳ و النگوی ۶۱۳۸۷. هر چهار از یک خانوادهٔ فرم بیرون آمده‌اند، اما هیچ‌کدام نسخهٔ کوچک‌شدهٔ دیگری نیست."
+     },
+     {
+      "type": "p",
+      "text": "دستبند سنگین‌ترین و صریح‌ترین آن‌هاست؛ ۵۴٫۷۹ گرم طلای هجده عیار که دور مچ می‌پیچد و وزنش را پنهان نمی‌کند. گردنبند برعکس، خط را باز می‌کند و می‌گذارد نقش روی استخوان ترقوه بنشیند. النگو سخت‌ترین قطعه از نظر ساخت است، چون فلس‌ها باید روی یک قوس بستهٔ بی‌درز ادامه پیدا کنند."
+     },
+     {
+      "type": "h",
+      "text": "چطور با هم پوشیده می‌شوند"
+     },
+     {
+      "type": "p",
+      "text": "قاعدهٔ ما ساده است: بیش از دو قطعه هم‌زمان نه. دستبند با گوشواره خوب می‌نشیند، گردنبند با النگو. اما هر چهار با هم، نقش را از یک اشاره به یک اعلام تبدیل می‌کنند و آن دیگر لحن این خانه نیست."
+     },
+     {
+      "type": "quote",
+      "text": "یک نقش وقتی شنیده می‌شود که تکرار شود، نه وقتی فریاد بزند."
+     },
+     {
+      "type": "p",
+      "text": "گوشواره کوچک‌ترین و بی‌صداترین قطعهٔ مجموعه است و معمولاً نقطهٔ شروع کسانی است که می‌خواهند این فرم را ابتدا در آینه ببینند، بعد تصمیم بگیرند."
+     }
+    ]
+   },
+   {
+    "slug": "choosing-your-piece",
+    "title": "چگونه یک قطعه انتخاب می‌شود",
+    "kicker": "راهنما",
+    "excerpt": "پرسش درست «کدام سنگ؟» نیست؛ «کجای زندگی؟» است.",
+    "readMin": 4,
+    "date": "۱۴۰۵/۰۳/۰۲",
+    "image": "assets/img/p/62691.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "بیشتر کسانی که وارد گالری می‌شوند از سنگ می‌پرسند. ما معمولاً از جای دیگری شروع می‌کنیم: این قطعه قرار است کجای زندگی شما باشد؟ هر روز روی مچ، یا سالی چند شب زیر نور مجلس؟ پاسخ این پرسش، نیمی از انتخاب را انجام می‌دهد."
+     },
+     {
+      "type": "h",
+      "text": "از تن شروع کنید، نه از ویترین"
+     },
+     {
+      "type": "p",
+      "text": "رنگ طلا باید با پوست بخواند، نه با سلیقهٔ فصل. طلای زرد روی پوست گرم آرام می‌گیرد و طلای سفید روی پوست سرد. این را نمی‌شود از عکس فهمید؛ باید قطعه را بست و در نور روز نگاه کرد، نه زیر لامپ ویترین که همه‌چیز را زیبا نشان می‌دهد."
+     },
+     {
+      "type": "p",
+      "text": "بعد نوبت وزن و قفل است. قطعه‌ای که در روز پنجم آزارتان بدهد، در روز سی‌ام در جعبه می‌ماند. قفل را چند بار خودتان باز و بسته کنید و نشستِ چنگ‌ها را با انگشت لمس کنید؛ نباید هیچ لبه‌ای به لباس گیر کند."
+     },
+     {
+      "type": "quote",
+      "text": "یک قطعهٔ درست، سه قطعهٔ تقریبی را بی‌مصرف می‌کند."
+     },
+     {
+      "type": "p",
+      "text": "و در پایان، سند. برای هر سنگ الماس، گواهی آزمایشگاهی بخواهید و شمارهٔ آن را با حک روی سنگ بسنجید. جواهرفروشِ خوب هرگز از پرسش‌های شما نمی‌رنجد."
+     }
+    ]
+   },
+   {
+    "slug": "caring-for-gold-and-stones",
+    "title": "نگهداری؛ آنچه طلا را خسته می‌کند",
+    "kicker": "نگهداری",
+    "excerpt": "طلا زنگ نمی‌زند، اما خسته می‌شود — و بیشتر آسیب‌ها در حمام و استخر اتفاق می‌افتد.",
+    "readMin": 3,
+    "date": "۱۴۰۵/۰۲/۱۴",
+    "image": "assets/img/p/61387.webp",
+    "body": [
+     {
+      "type": "p",
+      "text": "طلا زنگ نمی‌زند، اما خسته می‌شود. بیشتر آسیب‌هایی که به کارگاه می‌رسند نه از ضربه، بلکه از عادت‌های روزمره می‌آیند: مواد شیمیایی، اصطکاک و نگهداری اشتباه."
+     },
+     {
+      "type": "h",
+      "text": "ترتیب پوشیدن"
+     },
+     {
+      "type": "p",
+      "text": "عطر، اسپری مو و کرم را پیش از جواهر بزنید، نه بعد از آن. کلر استخر و آب‌های گرم معدنی به مرور آلیاژ طلای سفید و لحیم‌های ظریف را تضعیف می‌کنند؛ پیش از شنا و ورزش، قطعه را باز کنید. همین یک عادت، بیشتر تعمیرهای غیرضروری را حذف می‌کند."
+     },
+     {
+      "type": "p",
+      "text": "برای شست‌وشوی خانگی، آب ولرم و یک قطره مایع ملایم کافی است. با مسواک بسیار نرم پشت سنگ را تمیز کنید — گرد و چربی همان‌جا جمع می‌شود و درخشش را می‌گیرد — و با پارچهٔ نخی خشک کنید. هرگز از جوهر نمک یا پاک‌کننده‌های خانگی استفاده نکنید."
+     },
+     {
+      "type": "p",
+      "text": "دستگاه اولتراسونیک برای الماس سالم بی‌خطر است، اما برای زمرد، فیروزه، مروارید و هر سنگ ترمیم‌شده مناسب نیست. اگر مطمئن نیستید، انجامش ندهید."
+     },
+     {
+      "type": "quote",
+      "text": "سخت‌ترین سنگ دنیا هم می‌تواند همسایه‌اش را در جعبه خط بیندازد."
+     },
+     {
+      "type": "p",
+      "text": "هر قطعه را جدا و در کیسهٔ نرم نگه دارید و سالی یک‌بار برای بازبینی چنگ‌ها و قفل به گالری بیاورید. این بازبینی رایگان است و چند دقیقه بیشتر طول نمی‌کشد."
+     }
+    ]
+   }
+  ]
+ },
+ "critique": {
+  "diagnosis": "The page is not too spare — it is too uniform, and uniformity is what makes space read as leftover instead of chosen. Every one of the seven bands is built from the same unit: one kicker, one `.d2` headline parked top-right, one object, then air to the band's edge. Density never varies, so nothing establishes what \"full\" looks like on this site, and with no dense passage to measure against, the sparse passages have no meaning — the eye reads unfinished rather than restrained. Three things compound it. First, there is almost nothing to read: the entire homepage carries roughly ninety words of Persian, and only two of those sentences are prose, so a reader has no reason to slow down and the whole page is consumed in six poster-glances. Second, the space is unbounded — a real maison page proves its grid with hairlines, section numerals, ruled rows, aligned captions and small print, so emptiness sits inside a visible frame; here there are exactly two hairlines on the entire front page (the plate edge and the CTA underline), the `.facts` bar has `padding-block:0` so it floats between bands rather than belonging to one, and the collection tiles are `object-fit:contain` at 14% padding inside 1:1 cells with no borders and no baseline, which leaves the four serpent pieces floating at maybe 15% cell coverage in a 1250px band of cream. Third, the substance that exists is hidden: `data/catalog.json` holds 172 priced, categorised pieces and `assets/img/p/` holds 156 shots, yet the front page surfaces four products and a six-row index whose every row says the same thing (\"جواهر و طلا\"), which reads as a placeholder list; and the brand's actual story — 1340 founding, the 1369 بازار امیر branch, the 1380 handover to the second generation, ISO since 2016, <span dir=\"ltr\">GIA</span> on every stone — is compressed into one sentence and three unlabelled words in a bar most people will scroll past. The fix is not to shrink the whitespace; it is to give the page chapters, ruled structure, reading matter, per-piece specificity and one genuinely dense passage, so the quiet passages become a decision the reader can perceive.",
+  "fixes": [
+   {
+    "where": "Global — css/app.css `.band`, `.head`, `.wrap`; every section in index.html",
+    "problem": "All seven bands share one layout register: same 1560px wrap, same gutters, same `.d2` headline in the same top-right position, same one-object payload. There is no perceptible grid and no sense of how many chapters the page has, so scrolling feels like flipping identical posters and the air between them reads as leftover, not composed.",
+    "fix": "Introduce structure without introducing a new type size. (a) Give every band a `.rule` top hairline carrying a section numeral and label in `--micro` on the right and the piece/section count on the left — eight of these instantly make the page read as an eight-chapter document and bound every whitespace field. (b) Add a second wrap width `.wrap--read{max-width:1080px}` and a lead register `.lead{font-size:var(--body);max-width:62ch;line-height:1.9}` (no new size, just a wider measure), then alternate: hero and collection bands use the wide wrap, تبار and یادداشت‌ها use the reading wrap. (c) Vary head shape — one band gets head+dek in two columns, one gets a centred head above `.markrule`. Same tokens throughout; only the shape of the container changes.",
+    "fa": "۰۱ — کالکشن مار   ·   ۰۲ — کارگاه   ·   ۰۳ — تبار   ·   ۰۴ — تضمین   ·   ۰۵ — جواهرات   ·   ۰۶ — یادداشت‌ها   ·   ۰۷ — خدمات   ·   ۰۸ — گالری"
+   },
+   {
+    "where": "index.html `.hero__type` / `.ledger`; css `.hero`",
+    "problem": "The right rail holds a headline, a 15px sub and a CTA, then roughly 300px of nothing down to a single `.ledger` line in the corner. The three `.beat` states swap in the same box with no indication they exist, so a reader who does not scroll 260svh never learns the hero has three acts — the tallest section on the site advertises none of its content.",
+    "fix": "Rebuild the rail as an editorial column with a foot. Under the CTA add a hairline, then a two-column micro spec ledger (کد / وزن / عیار / سنگ) using the existing `.facts` hairline treatment scaled down — four labelled values replace the one orphan `.ledger` line and give the lower rail a bottom edge. Above the eyebrow add a beat counter `۰۱ ⁄ ۰۳` with a 1px `--metal` progress hairline whose width is driven by the same scroll fraction `js/jewel.js` already computes, plus a `برای چرخاندن، اسکرول کنید` cue in `--micro` that fades out after beat 1. Cost: no new assets, one extra JS write to a CSS variable.",
+    "fa": "کد ۵۸۵۹۱ · وزن ۵۴٫۷۹ گرم · طلای ۱۸ عیار · زمرد و الماس با گواهی <span dir=\"ltr\">GIA</span> — برای چرخاندن، اسکرول کنید — ۰۱ ⁄ ۰۳"
+   },
+   {
+    "where": "css/app.css `@media (max-width:900px)` hero block; screenshot 05-mobile",
+    "problem": "On mobile the plate fills the whole screen, the jewel is capped at `--hmax:44svh` and the type sits at `bottom:11svh`, leaving a band of roughly 25–30% of the viewport of pure flat green between the piece and the headline. The one composition cue that carries the desktop hero — type crossing the plate hairline — is disabled (`.plate::after{display:none}`), so mobile gets emptiness with none of the structure.",
+    "fix": "Close the gap and fill it with substance: raise the jewel to `--hmax:52svh`, drop the type to `inset-block-end:5svh`, and put a horizontally scrollable hairline spec strip (the same four spec cells from the hero ledger, `overflow-x:auto`, snap points) in the recovered band directly beneath the piece. Re-enable a horizontal version of the plate hairline as a full-width rule above the type block so the mobile hero keeps one architectural edge. Pin the `۰۱ ⁄ ۰۳` beat counter just under the nav where it is unmissable on a phone.",
+    "fa": "طلای ۱۸ عیار  ·  ۵۴٫۷۹ گرم  ·  زمرد کلمبیایی  ·  الماس با گواهی <span dir=\"ltr\">GIA</span>  ·  کد ۵۸۵۹۱"
+   },
+   {
+    "where": "index.html `.bleed--wrist` section",
+    "problem": "88svh of the strongest photograph on the site carries four words and nothing else — no caption, no piece credit, no link, no prose. The image is doing work no one names, and because the copy block is `width:min(46%,540px)` holding a single two-line headline, the right half of the frame is a scrim gradient with a headline floating in it.",
+    "fix": "Make it a proper editorial spread. Keep the headline, add beneath it a 3-line `.lead` paragraph on how the piece is worn, then a hairline and a piece credit that links to the 58591 product page using the existing `.lnk`. Along the left edge of the photograph, set a rotated `--micro` caption (writing-mode / rotate, RTL-safe) naming the piece and code the way a catalogue plate is captioned — it costs nothing, anchors the image to the frame edge, and is exactly the density cue the band lacks.",
+    "fa": "آنچه می‌ماند، دیده می‌شود — دستبند مار دور مچ می‌پیچد و در جای خود می‌نشیند؛ نه بسته می‌شود، نه رها می‌کند. حلقهٔ باز آن با فشار انگشت اندازه می‌گیرد و روی هر مچی می‌نشیند.  |  کاور کناری: دستبند مار بولگاری — کد ۵۸۵۹۱، طلای ۱۸ عیار  |  پیوند: دیدن این قطعه"
+   },
+   {
+    "where": "index.html `#serpent` band; css `.plates`, `.pl__m`, `.pl__n`",
+    "problem": "The single worst emptiness on the page. Four equal 1:1 cells, `object-fit:contain` with `padding:14%`, no cell borders, no shared baseline — the earrings occupy roughly a seventh of their cell. `.pl__n{min-height:3.2em}` leaves two of four captions with a blank line under them. Net result is a ~1250px band that is around 85% bare cream, with all four pieces at identical visual weight even though one of them is the hero of the entire site.",
+    "fix": "Convert the flat 4-up into an editorial arrangement with real hierarchy. Left two columns: the 58591 bracelet at large scale (padding down to 6%) with a hairline-ruled spec list beside it — وزن، عیار، سنگ، کد — giving the band its one dense corner. Right: the other three stacked as hairline-separated rows at smaller scale, name and spec on a shared baseline (kill the `min-height` hack, use a hairline as the baseline instead). Above the grid, a two-column intro on why the house makes the serpent — reading matter where there is currently none. Drop `padding` on `.pl__m img` to 6% across the board so the products stop swimming.",
+    "fa": "کالکشن مار — یک نماد، چهار روایت. مار در جواهرسازی کهن‌ترین نشان تجدید است؛ حلقه‌ای که به خودش می‌رسد و آغاز و پایان ندارد. علیپور این نماد را در چهار قطعه بازخوانی کرده است: دستبند، گردنبند، گوشواره و النگو — یک زبان، چهار لحن.  |  مشخصات: وزن ۵۴٫۷۹ گرم · عیار ۱۸ · نگین زمرد و الماس · کد ۵۸۵۹۱"
+   },
+   {
+    "where": "New band between `#atelier` and the facts row",
+    "problem": "The house has sixty-five years of provenance — founding in ۱۳۴۰ by حاج حمید علیپور, the بازار بزرگ امیر branch in ۱۳۶۹, the handover to اصغر علیپور in ۱۳۸۰, <span dir=\"ltr\">ISO 9001</span> from 2016 — and the site tells exactly one sentence of it. Provenance is the cheapest, densest, most on-brand content a maison page can carry, and it is entirely absent.",
+    "fix": "Add a «تبار» band on paper using the narrow reading wrap: a lead paragraph, then a four-row hairline-ruled timeline reusing the exact `.idx` row mechanics (year on the right in display weight, one line of description, `--micro` label on the left). Four ruled rows plus a paragraph is a genuinely dense passage, needs no photography, and gives the neighbouring quiet bands something to be quiet against. Anchor `#lineage`, add it to the menu.",
+    "fa": "تبار — شصت و پنج سال، یک کارگاه.\n۱۳۴۰ — حاج حمید علیپور کارگاه را در تبریز بنیان می‌گذارد.\n۱۳۶۹ — گشایش شعبهٔ دوم در بازار بزرگ امیر تبریز.\n۱۳۸۰ — اصغر علیپور، فرزند بنیان‌گذار، کار را ادامه می‌دهد.\n۱۳۹۵ — دریافت گواهی‌نامهٔ <span dir=\"ltr\">ISO 9001</span> برای کنترل کیفیت تولید."
+   },
+   {
+    "where": "index.html `.band--ink` facts row (lines 167–175)",
+    "problem": "Three of the brand's strongest credibility signals are reduced to three bare words in a strip with `padding-block:0`, so it neither belongs to the atelier band above nor the gallery band below — it reads as a divider someone forgot to finish. Nothing explains what <span dir=\"ltr\">GIA</span> guarantees or what <span dir=\"ltr\">ISO 9001</span> covers, so the signals do no persuading.",
+    "fix": "Promote it to a real «تضمین» section: give it proper `padding-block`, a kicker and a heading, and let each of the three cells carry its number plus a two-line explanation under the existing `.facts` hairline grid. Add a fourth cell for the catalogue size read from `catalog.json` (۱۷۲ قطعه) so the grid is 2×2 on tablet and 4-up on desktop, and close with a `.lnk` to the certification note in the journal.",
+    "fa": "تضمین — آنچه پشت هر قطعه است.\n<span dir=\"ltr\">GIA</span> — هر الماس با گواهی‌نامهٔ مؤسسهٔ جواهرشناسی آمریکا عرضه می‌شود؛ رنگ، پاکی، تراش و قیراط، مستقل و قابل استعلام.\n<span dir=\"ltr\">ISO 9001</span> — کنترل کیفیت تولید از سال ۲۰۱۶، در همهٔ مراحل ساخت.\n۱۳۴۰ — بنیان‌گذاری به دست حاج حمید علیپور؛ ساخت هنوز در کارگاه خودمان انجام می‌شود.\n۱۷۲ قطعه — فهرست کامل جواهر و طلا، به‌روزرسانی‌شده."
+   },
+   {
+    "where": "index.html `#pieces` `.idx` rows",
+    "problem": "Six rows that each say «جواهر و طلا». They carry no differentiating information whatsoever, so a list that should communicate the scale of a 172-piece catalogue instead looks like unfilled scaffolding — and `assets/img/p/` (156 local shots) sits unused on the front page.",
+    "fix": "Give each row real payload from `data/catalog.json`: a per-category count in Persian numerals on the left where `.idx__c` currently repeats itself, the jewel/gold split as a second micro value, and a strip of three overlapping thumbnails from that category's local `assets/img/p/<code>.webp` files pinned to the row's inner edge — visible at low opacity, rising to full on hover using the row's existing hover transition. Six rows go from identical text to six visually distinct, information-bearing bands, and the catalogue's real size becomes felt rather than claimed.",
+    "fa": "انگشتر — ۳۶ قطعه · جواهر و طلا   |   گردنبند — ۳۶ قطعه · جواهر و طلا   |   گوشواره — ۳۶ قطعه · جواهر و طلا   |   دستبند — ۳۶ قطعه · جواهر و طلا   |   آویز — ۱۸ قطعه · جواهر   |   سرویس — ۱۸ قطعه · جواهر"
+   },
+   {
+    "where": "New band before `#visit` — surfaces the forthcoming blog",
+    "problem": "There is no content that continues. Nothing on the page implies the site is maintained, has a voice, or will have anything new next month — the strongest single reason a luxury reader keeps scrolling and the strongest reason they return. A blog is already planned and nothing on the front page anticipates it.",
+    "fix": "Add a «یادداشت‌ها» band: three hairline-ruled rows (Persian date on the right in `--micro`, title in `.d2`-adjacent weight but body size, one-line dek, small square thumb cropped from an existing `assets/img/p/` shot on the inner edge), closing with a `.lnk` to the journal index. Rows reuse `.idx` mechanics exactly, so it is CSS you already have. Ships as three static rows now and becomes the blog's front-page surface the day the blog lands.",
+    "fa": "یادداشت‌ها — از کارگاه\n۱۴۰۴/۰۵/۱۲ — گواهی <span dir=\"ltr\">GIA</span> چه می‌گوید؟ چهار معیاری که قیمت یک الماس را می‌سازد.\n۱۴۰۴/۰۴/۲۸ — نگهداری از طلای ۱۸ عیار؛ آنچه نباید به جواهر بزنید.\n۱۴۰۴/۰۴/۰۹ — چرا مار؟ کهن‌ترین نماد جواهرسازی و بازخوانی آن در تبریز.\nپیوند: همهٔ یادداشت‌ها"
+   },
+   {
+    "where": "New «خدمات» band before `#visit`; plus header nav",
+    "problem": "The site offers exactly one action — رزرو نمایش حضوری — repeated twice, and the header holds a single word (فهرست) beside the lockup. A jewellery house sells bespoke commissions, servicing, gifting and private viewing; none of that exists here, so the page gives a motivated visitor nothing to do and the nav bar reads as empty chrome. An account area and a bag are coming and have nowhere to land.",
+    "fix": "Add a three-column «خدمات» band on `--field` with hairline dividers: each column gets a heading, a two-line paragraph and a `.lnk`. In the header, place a hairline-separated micro cluster next to `فهرست` — `حساب من` and `سبد (۰)` — matching the `.navbtn` treatment so the chrome gains structure now and the account/bag ship into a slot that already exists rather than being bolted on.",
+    "fa": "خدمات\nنمایش خصوصی — قطعهٔ مورد نظر را پیش از مراجعه کنار بگذارید تا در گالری، بدون عجله، ببینید.\nسفارش ساخت — طرح شما در کارگاه علیپور ساخته می‌شود؛ از انتخاب نگین تا تحویل.\nسرویس و نگهداری — شست‌وشو، آب‌کاری، تعویض قفل و بازسازی برای قطعه‌های علیپور.\nسربرگ: حساب من · سبد (۰)"
+   },
+   {
+    "where": "index.html `#visit` band",
+    "problem": "The invitation section is a heading plus three cells and a link. It omits opening hours, the second branch in بازار بزرگ امیر (open since ۱۳۶۹ and part of the brand's own story), any sense of place, and any explanation of what a private viewing actually involves — so the page's closing ask is the thinnest block on it.",
+    "fix": "Split into two columns inside the wide wrap. Right column: both branches as two hairline-ruled address blocks (name, address, phone, hours), with the لاله پارک branch marked as the main gallery. Left column: a short paragraph on what a private viewing is, then the CTA. Beneath both, a full-width hairline row for email, Instagram and the catalogue link. Hours must be confirmed by the client before build — do not ship invented times; leave the field as a labelled placeholder if he has not supplied them.",
+    "fa": "به گالری دعوت‌اید — قطعه را پیش از مراجعه کنار می‌گذاریم و در آرامش، با نور درست، می‌بینیدش. برای وقت خصوصی تماس بگیرید.\nگالری اصلی — تبریز، مجتمع تجاری لاله پارک، طبقهٔ همکف · ۰۴۱–۳۱۱۸\nشعبهٔ بازار — تبریز، بازار بزرگ امیر · از سال ۱۳۶۹\nساعت‌های کاری: [در انتظار تأیید کارفرما]"
+   },
+   {
+    "where": "footer `.foot__in`",
+    "problem": "The page ends on a lockup, three links and a copyright line — roughly 90px of content closing a site that is supposedly a maison. Readers expect density at the foot; ending thin confirms the impression that the site has nothing in it.",
+    "fix": "Rebuild as a four-column hairline sitemap above the existing single-line strip: کالکشن‌ها (the six catalogue categories, linked into products.html anchors), خدمات (the three new services), خانه (تبار، کارگاه، تضمین، یادداشت‌ها), تماس (both branches, phone, email, Instagram). Put the stacked lockup (`.logo--stack`, already built) at the head of the block and keep the existing copyright row as the closing hairline strip. Pure text, zero new assets, and it lands the page on substance instead of on air.",
+    "fa": "کالکشن‌ها: انگشتر · گردنبند · گوشواره · دستبند · آویز · سرویس\nخدمات: نمایش خصوصی · سفارش ساخت · سرویس و نگهداری\nخانه: تبار · کارگاه · تضمین · یادداشت‌ها\nتماس: لاله پارک · بازار بزرگ امیر · ۰۴۱–۳۱۱۸ · info@alipourjewelry.com · اینستاگرام"
+   }
+  ]
+ },
+ "proof": {
+  "verdict": "The prose is strong — real Persian, not machine-translated, with correct ZWNJ discipline in almost every compound (گفت‌وگو، شست‌وشو، نقش‌مایه، قابل‌پیگیری), correct Persian punctuation throughout (، ؛ « » ؟ — no Latin marks anywhere), and correct ٫ decimal in ۵۴٫۷۹. The five tab labels all fit a 10px label (longest is جواهرات at 7 glyphs) — no problem there. What needs fixing: one orthographic split between the two files, four outright grammar/word errors, a calendar slip, and a cluster of loanword/register drops that break the maison voice.",
+  "corrections": [
+   {
+    "where": "UI copy — every ezafe in account.* and bag.* (شمارهٔ همراه، دفعهٔ بعد، آمادهٔ نمایش، مرحله‌به‌مرحله‌ی، بیمهٔ ارسال، شیوهٔ تسویه، مراجعه‌کنندهٔ دیگر، پروندهٔ شما، گیرهٔ سنگ‌ها) plus the 8 legacy strings in index.html, products.html, js/app.js",
+    "wrong": "‑هٔ ezafe (شماره‌ی، دفعه‌ی، بیمه‌ی، صفحه‌ی، دکمه‌ی)",
+    "right": "‑هٔ ezafe (شمارهٔ، دفعهٔ، بیمهٔ، مرحله‌به‌مرحلهٔ، شیوهٔ، پروندهٔ، صفحهٔ، دکمهٔ)",
+    "why": "Two orthographies in one product: the blog uses ٔ without exception (دفترچهٔ، خانهٔ، حاشیهٔ، شمارهٔ، قاعدهٔ) while the UI and the already-shipped pages use هٔ — verified 0 hamza vs 8 هٔ in /Users/ilya/Claude Code/alipour-jewelry/index.html, products.html and js/app.js. Pick one; ٔ is the formal editorial form and the right register for a house dated ۱۳۴۰, so convert the UI and the eight legacy strings rather than the blog."
+   },
+   {
+    "where": "UI copy → bag.checkoutNote, final clause",
+    "wrong": "تا آن لحظه قطعه به نام شما محفوظ می‌ماند.",
+    "right": "تا آن لحظه قطعه به نام شما محفوظ می‌ماند. (or: کنار گذاشته می‌شود.)",
+    "why": "«گذاشته می‌ماند» is not a valid construction — ماندن compounds with a state (باقی می‌ماند، محفوظ می‌ماند), not with a passive participle of گذاشتن. It is the one genuinely broken sentence in the set, and it sits in the checkout note where trust matters most."
+   },
+   {
+    "where": "UI copy → bag.summaryLabels, last item",
+    "wrong": "مبلغ قابل‌پرداخت",
+    "right": "مبلغ قابل‌پرداخت",
+    "why": "Missing ZWNJ — «قابل» + adjective is a bound compound and takes نیم‌فاصله. The blog gets the identical construction right two posts earlier with «قابل‌پیگیری», so the site contradicts itself."
+   },
+   {
+    "where": "BLOG → choosing-your-piece, final paragraph",
+    "wrong": "جواهرفروشِ خوب هرگز از پرسش‌های شما نمی‌رنجد.",
+    "right": "جواهرفروشِ خوب هرگز از پرسش‌های شما نمی‌رنجد.",
+    "why": "A جواهر (the object) cannot take offence — the intended subject is the jeweller, جواهرفروش. And هیچ‌وقت is conversational where the rest of the piece is formal; هرگز is the register."
+   },
+   {
+    "where": "BLOG → serpent-in-persian-art, fourth paragraph",
+    "wrong": "شاید به همین دلیل است که زرگرانِ شرق و غرب، هر دو، قرن‌ها به این فرم بازگشته‌اند.",
+    "right": "شاید به همین دلیل است که زرگرانِ شرق و غرب، هر دو، قرن‌ها به این فرم بازگشته‌اند.",
+    "why": "Number disagreement: زرگری is a singular abstract noun (the craft) and cannot govern the plural بازگشته‌اند. Pluralise the subject to زرگران (reads better after «هر دو») or keep زرگری and drop to بازگشته است."
+   },
+   {
+    "where": "BLOG → house-since-1340, third paragraph",
+    "wrong": "از سال ۱۳۸۰ سرپرستیِ کار به اصغر علیپور، پسر بنیان‌گذار، رسید.",
+    "right": "از سال ۱۳۸۰ سرپرستیِ کار به اصغر علیپور، پسر بنیان‌گذار، رسید.",
+    "why": "«ادارهٔ کار» is the name of a real Iranian government body (the labour office). An Iranian reader parses the institution first and the intended sense of running the business second — an unwanted double reading inside the house's own history."
+   },
+   {
+    "where": "BLOG → house-since-1340, final paragraph",
+    "wrong": "در سال ۱۳۹۵ سامانهٔ کیفیت خانه با استاندارد <span dir=\"ltr\">ISO 9001</span> تطبیق داده شد",
+    "right": "در سال ۱۳۹۵ سامانهٔ کیفیت خانه با استاندارد <span dir=\"ltr\">ISO 9001</span> تطبیق داده شد",
+    "why": "Calendar mix: every other date in the piece is Jalali (۱۳۴۰، ۱۳۶۹، ۱۳۸۰) and then a Gregorian year appears in Persian digits with no marker — it reads as a translation artefact. If the Gregorian year must stay for the ISO record: «در سال ۱۳۹۵ (۲۰۱۶ میلادی)»."
+   },
+   {
+    "where": "BLOG → reading-a-gia-report title and body (<span dir=\"ltr\">GIA</span>); house-since-1340 (<span dir=\"ltr\">ISO 9001</span>); UI copy → account.fields email placeholder (you@example.com)",
+    "wrong": "Bare Latin runs inside RTL Persian text",
+    "right": "<span dir=\"ltr\">GIA</span>، <span dir=\"ltr\">ISO 9001</span>، <span dir=\"ltr\">you@example.com</span>",
+    "why": "Per the house RTL rule, unwrapped Latin bleeds under bidi. «<span dir=\"ltr\">ISO 9001</span>» is the dangerous one — a Latin digit run adjacent to Persian text can jump position. Wrap at render time, in the journal renderer as well as the form."
+   },
+   {
+    "where": "BLOG → the-serpent-collection, first paragraph",
+    "wrong": "دستبند ۵۸۵۹۱، گردنبند ۶۲۶۹۱، گوشوارهٔ ۶۲۶۹۳ و النگوی ۶۱۳۸۷",
+    "right": "دستبند ۵۸۵۹۱، گردنبند ۶۲۶۹۱، گوشواره ۶۲۶۹۳ و النگو ۶۱۳۸۷ (or add ezafe to all four)",
+    "why": "Four references in one sentence use two constructions — the first two bare, the last two with ezafe (‑هٔ، ‑ی). A reference-number list has to be uniform or it reads as unproofed in the one paragraph that is pure catalogue data."
+   },
+   {
+    "where": "BLOG → the-serpent-collection, «چطور با هم پوشیده می‌شوند» paragraph",
+    "wrong": "اما هر چهار با هم، نقش را از یک اشاره به یک اعلام تبدیل می‌کنند",
+    "right": "اما هر چهار با هم، نقش را از یک اشاره به یک اعلام تبدیل می‌کنند",
+    "why": "«هر چهار» is an explicitly counted plural subject and takes a plural verb; the singular-verb licence for inanimate plurals does not extend to a numeral-quantified subject."
+   },
+   {
+    "where": "BLOG → the-serpent-collection title and kicker («کالکشن مار، چهار قطعه» / «کالکشن»); house-since-1340 («کاتالوگ ۱۷۲ قطعه»); UI copy → account.benefits item 5 («خبر کالکشن تازه»)",
+    "wrong": "کالکشن، کاتالوگ",
+    "right": "مجموعه، فهرست — «مجموعهٔ مار، چهار قطعه»؛ «فهرستی از ۱۷۲ قطعه»؛ «خبر مجموعهٔ تازه»",
+    "why": "Marketplace loanwords in a maison voice, and the copy already contradicts itself: the closing paragraph of the same post says «بی‌صداترین قطعهٔ مجموعه» and the bag empty state says «فهرست جواهرات». Standardise on مجموعه/فهرست."
+   },
+   {
+    "where": "UI copy → account.benefits, item 4",
+    "wrong": "یادآوری رسیدگی دوره‌ای: شست‌وشو، پولیش و بازبینی چنگ‌ها.",
+    "right": "یادآوری رسیدگی دوره‌ای: شست‌وشو، پرداخت و بازبینی چنگ‌ها.",
+    "why": "سرویس and پولیش are garage vocabulary. Worse, گیره contradicts the blog, which twice uses the correct trade term چنگ («نشستِ چنگ‌ها»، «بازبینی چنگ‌ها و قفل») — one house, one word for a prong."
+   },
+   {
+    "where": "UI copy → account.sections.appointments.empty",
+    "wrong": "یک ساعت در گالری لاله پارک، به نام شما و بدون مراجعه‌کنندهٔ دیگر.",
+    "right": "یک ساعت در گالری لاله‌پارک، به نام شما و بدون مهمان دیگر.",
+    "why": "مراجعه‌کننده is clinic/registry-office vocabulary (applicant, patient). A jewellery house receives مهمان — the whole point of the line is the intimacy of a private hour, and the bureaucratic noun undoes it."
+   },
+   {
+    "where": "UI copy → account.benefits, item 6",
+    "wrong": "یک مشاور مشخص که پروندهٔ شما را می‌شناسد.",
+    "right": "مشاوری ثابت که پروندهٔ شما را می‌شناسد.",
+    "why": "«مشاور مشخص» is a literal rendering of \"a specific/designated advisor\" and lands bureaucratic; the sense intended is a dedicated, unchanging advisor — ثابت or اختصاصی. The article-calque «یک» goes with it."
+   },
+   {
+    "where": "UI copy → account.sections.details.empty",
+    "wrong": "…تا تماس و تحویل بی‌وقفه انجام شود.",
+    "right": "…تا تماس و تحویل بدون معطلی انجام شود.",
+    "why": "بی‌وقفه means non-stop/incessant — it describes something that never pauses, not a smooth handover. \"Uninterrupted delivery\" is a translation calque; بدون معطلی or بی‌درنگ carries the intended sense."
+   },
+   {
+    "where": "UI copy → account.fields vs account.sections.details.empty",
+    "wrong": "The empty state asks the customer to complete نشانی, but the field list collects only fullName, mobile, email, password, city.",
+    "right": "Add a field {key: \"address\", label: \"نشانی\", placeholder: \"خیابان، کوچه، پلاک، واحد\"} — or change the empty state to «شمارهٔ همراه و شهر را کامل کنید…».",
+    "why": "The account asks for a field the form never offers, a dead end no UI state can clear — and it undercuts the دفتر promise the sign-out screen makes."
+   },
+   {
+    "where": "UI copy → bag.checkoutNote, opening sentence",
+    "wrong": "سفارش‌های سنگین با پرداخت آنلاین بسته نمی‌شود.",
+    "right": "سفارش‌های پرمبلغ به‌صورت آنلاین نهایی نمی‌شوند.",
+    "why": "سنگین is ambiguous in a jewellery context — first parse is physical weight (grams of gold), not order value. And «بسته شدن» for closing a transaction is a calque; نهایی شدن is the Persian for finalising an order."
+   },
+   {
+    "where": "UI copy → account.signedOutBody («وقتی که برای نمایش می‌گیرید») and bag.emptyBody («یا وقتی برای نمایش حضوری بگیرید»)",
+    "wrong": "وقتی که برای نمایش می‌گیرید / وقتی برای نمایش حضوری بگیرید",
+    "right": "وقتِ نمایشی که می‌گیرید / یا وقتِ نمایش حضوری بگیرید",
+    "why": "Without the ezafe, وقتی reads first as the conjunction \"when\" and the sentence garden-paths — the reader has to back up to see that وقت is the noun (appointment). The ezafe disambiguates on first pass."
+   },
+   {
+    "where": "UI copy → account.sections.orders.empty",
+    "wrong": "هنوز سفارشی ثبت نشده.",
+    "right": "هنوز سفارشی ثبت نشده است.",
+    "why": "Dropped copula. The sibling empty state directly above is written in full («قراری ثبت نشده است.»), so the clipped version reads blog-casual beside it — five empty states in one column should share a cadence."
+   },
+   {
+    "where": "BLOG → date field of all six posts (e.g. «۱۴۰۵/۰۵/۲۰»)",
+    "wrong": "۱۴۰۵/۰۵/۲۰",
+    "right": "۲۰ مرداد ۱۴۰۵",
+    "why": "Slash-separated numeric dates are administrative-form style, not editorial — a journal datelines in words. Separately, a slash-delimited digit run inside an RTL paragraph is exactly the bidi shape that reorders unpredictably across renderers."
+   },
+   {
+    "where": "BLOG intro («دفترچهٔ خانهٔ علیپور») vs UI copy → tabs.journal («روایت‌ها», journal.html)",
+    "wrong": "Two names for one section: دفترچه and روایت‌ها",
+    "right": "Use one — «دفترچه» works as the tab label too (6 glyphs, fine at 10px) — or open the intro with «روایت‌های خانهٔ علیپور».",
+    "why": "The tab the customer taps and the heading they land on should say the same word; otherwise the first visit reads as two sections stitched together."
+   },
+   {
+    "where": "BLOG → reading-a-gia-report, «چهار سنجه، یک نتیجه» paragraph",
+    "wrong": "…زیر بزرگ‌نمایی ده‌برابر دیده می‌شود، و تراش.",
+    "right": "…زیر بزرگ‌نمایی ده‌برابر دیده می‌شود و تراش.",
+    "why": "Comma before the closing «و» is an Oxford-comma import; Persian lists do not punctuate ahead of the final conjunction. It is the one spot where the punctuation looks translated rather than composed."
+   }
+  ]
+ }
+}

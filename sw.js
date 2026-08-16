@@ -5,7 +5,7 @@
    frames are cached lazily as they are actually fetched, which keeps the
    install cheap and still leaves the arc available offline once seen.
    ========================================================================== */
-const VERSION = 'alipour-v1';
+const VERSION = 'alipour-v2';
 const SHELL   = VERSION + '-shell';
 const RUNTIME = VERSION + '-runtime';
 
@@ -13,10 +13,21 @@ const PRECACHE = [
   './',
   './index.html',
   './products.html',
+  './blog.html',
+  './bag.html',
+  './account.html',
+  './blog-caring-for-gold-and-stones.html',
+  './blog-choosing-your-piece.html',
+  './blog-house-since-1340.html',
+  './blog-reading-a-gia-report.html',
+  './blog-serpent-in-persian-art.html',
+  './blog-the-serpent-collection.html',
+  './data/content.json',
   './offline.html',
   './css/app.css',
   './js/app.js',
   './js/jewel.js',
+  './js/shell.js',
   './manifest.webmanifest',
   './data/catalog.json',
   './data/motion.json',
@@ -84,7 +95,9 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  /* everything else: cache first, then network, and keep what we fetch */
+  /* everything else: cache first, then network, and keep what we fetch.
+     A subresource must NEVER fall back to index.html — handing HTML to an
+     <img> or a fetch() is worse than a clean failure. */
   e.respondWith(
     caches.match(req).then((hit) => hit || fetch(req).then((res) => {
       if (res && res.status === 200 && res.type === 'basic') {
@@ -95,7 +108,7 @@ self.addEventListener('fetch', (e) => {
         });
       }
       return res;
-    }).catch(() => caches.match('./index.html')))
+    }).catch(() => new Response('', { status: 504, statusText: 'offline' })))
   );
 });
 

@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#efe9dd">
-<title>جواهرات | جواهری علیپور</title>
-<meta name="description" content="گالری جواهرات و طلای علیپور — انگشتر، گردنبند، گوشواره، دستبند، آویز و سرویس.">
+<meta name="theme-color" content="#071b10">
+<title>سبد شما | جواهری علیپور</title>
+<meta name="description" content="سبد خرید جواهری علیپور">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IRANYekanXFaNum-VF.woff2" crossorigin>
 <link rel="manifest" href="manifest.webmanifest">
@@ -14,26 +14,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="علیپور">
-<meta name="application-name" content="علیپور">
 <link rel="stylesheet" href="css/app.css">
-<style>
-  /* the catalogue lives entirely on paper */
-  html,body{background:var(--paper);color:var(--paper-ink)}
-  .nav .logo{color:var(--paper-ink)}
-  .nav .logo__mark{color:#8a7660}
-  .nav .logo__txt i{color:#8a7660;border-inline-start-color:rgba(27,28,24,.18)}
-  .navbtn{color:rgba(27,28,24,.6)}
-  .navbtn:hover{color:var(--paper-ink)}
-  .nav.stuck{background:linear-gradient(var(--paper),rgba(239,233,221,0))}
-  .chips{display:flex;flex-wrap:wrap;gap:.4rem 1.7rem;margin-bottom:clamp(30px,4vw,56px)}
-  .chip{font-size:13px;font-variation-settings:'wght' 400;color:rgba(27,28,24,.45);
-    padding-block:.3em;border-bottom:1px solid transparent;transition:color .4s,border-color .4s}
-  .chip:hover{color:var(--paper-ink)}
-  .chip.on{color:var(--paper-ink);border-bottom-color:#8a7660}
-  .foot{background:var(--paper);border-top:1px solid rgba(27,28,24,.16)}
-  .foot a,.foot .micro{color:rgba(27,28,24,.6)}
-  .foot a:hover{color:var(--paper-ink)}
-</style>
 </head>
 <body>
 
@@ -51,27 +32,19 @@
   <span class="logo logo--stack menu__logo" aria-hidden="true"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg></span>
   <a href="index.html#serpent">کالکشن مار</a>
   <a href="products.html">جواهرات</a>
+  <a href="blog.html">روایت‌ها</a>
   <a href="index.html#atelier">کارگاه</a>
-  <a href="index.html#visit">گالری</a>
+  <a href="account.html">حساب کاربری</a>
 </div>
 
-<main id="main">
-  <section style="padding-block:calc(var(--nav) + clamp(60px,9vw,130px)) clamp(20px,3vw,36px)">
-    <div class="wrap">
-      <span class="kick" data-rv style="color:#8a7660">گالری</span>
-      <h1 class="d1" data-rv style="margin-bottom:20px">جواهرات</h1>
-      <p class="body" data-rv style="color:rgba(27,28,24,.6);margin-bottom:clamp(34px,4.4vw,60px)">
-        <span data-count-out>۱۵۶</span> قطعه. برای خرید و جزئیات، به فروشگاه رسمی هدایت می‌شوید.
-      </p>
-      <div class="chips" role="group" aria-label="فیلتر دسته‌بندی"></div>
+<main id="main" class="page">
+  <div class="wrap" style="max-width:1080px">
+    <div class="page__head">
+      <span class="kick">سبد</span>
+      <h1 class="d1">سبد شما</h1>
     </div>
-  </section>
-
-  <section style="padding-bottom:clamp(90px,12vw,170px)">
-    <div class="wrap">
-      <div class="plates" data-products></div>
-    </div>
-  </section>
+    <div data-bag-mount></div>
+  </div>
 </main>
 
 <footer class="foot">
@@ -79,22 +52,16 @@
     <a class="logo" href="index.html" aria-label="جواهری علیپور"><svg class="logo__mark" viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg><span class="logo__txt"><b>ALIPOUR</b><i>JEWELRY</i></span></a>
     <nav aria-label="پیوندها">
       <a href="index.html">خانه</a>
+      <a href="products.html">جواهرات</a>
+      <a href="blog.html">روایت‌ها</a>
       <a href="index.html#visit">گالری</a>
       <a href="https://instagram.com/alipour.jewelry" target="_blank" rel="noopener">اینستاگرام</a>
     </nav>
-    <p class="micro">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
+    <p class="micro faint">© <span data-year>۱۴۰۴</span> جواهری علیپور</p>
   </div>
 </footer>
 
-
 <nav class="tabbar" aria-label="پیمایش اصلی"></nav>
-
-<div class="install" role="dialog" aria-label="افزودن به صفحه‌ی اصلی" hidden>
-  <svg viewBox="0 0 149 42" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3.7" stroke-linejoin="miter" stroke-miterlimit="10" d="M20.5 2.2 H38 L73.5 38.8 L109 2.2 H128.5 A18.3 18.3 0 0 1 128.5 38.8 H109 L73.5 2.2 L38 38.8 H20.5 A18.3 18.3 0 0 1 20.5 2.2 Z"/></svg>
-  <p><b>افزودن به صفحه‌ی اصلی</b>علیپور را مثل یک اپلیکیشن باز کنید.</p>
-  <button data-install>افزودن</button>
-  <button class="x" data-install-close aria-label="بستن">×</button>
-</div>
 
 <script src="js/shell.js" defer></script>
 <script src="js/app.js" defer></script>
